@@ -2,7 +2,7 @@
     include '../../../../Conexao/Conexao.php';
     
     class CadastroIgreja extends Conexao{
-        
+            
         public function cadastarIgrejas( $param ){
             $dirigente   = $param['dirigente'];
             $nome_igreja = $param['nome_igreja'];
