@@ -25,7 +25,7 @@ class Configura
     // senha do banco
     public static function senha()
     {
-        $senha =123;
+        $senha = "";
         return $senha;
     }
 
