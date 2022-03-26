@@ -240,7 +240,7 @@
         <!-- ============================================================== -->
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
-        <?php include('menuTesoureiro.php') ?>
+        <?php include('menuTesoureiroFinanceiro.php') ?>
 
         <div class="page-wrapper">
             <div class="page-breadcrumb">

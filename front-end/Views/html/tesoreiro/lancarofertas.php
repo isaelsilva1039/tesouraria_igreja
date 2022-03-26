@@ -1,3 +1,8 @@
+<?php
+    include 'Query.php';
+    $query = new Query()
+?>
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
@@ -6,10 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords"
-        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Matrix lite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, Matrix admin lite design, Matrix admin lite dashboard bootstrap 5 dashboard template" />
-    <meta name="description"
-        content="Matrix Admin Lite Free Version is powerful and clean admin dashboard template, inpired from Bootstrap Framework" />
+    <meta name="keywords" content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Matrix lite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, Matrix admin lite design, Matrix admin lite dashboard bootstrap 5 dashboard template" />
+    <meta name="description" content="Matrix Admin Lite Free Version is powerful and clean admin dashboard template, inpired from Bootstrap Framework" />
     <meta name="robots" content="noindex,nofollow" />
     <title> Igreja AD-53 </title>
     <!-- Favicon icon -->
@@ -20,19 +23,25 @@
     <link href="../../dist/css/style.min.css" rel="stylesheet" />
     <!-- Css -->
     <link href="stylos.css" rel="stylesheet" />
-   
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
     <div class="preloader">
         <div class="lds-ripple">
             <div class="lds-pos"></div>
             <div class="lds-pos"></div>
         </div>
     </div>
-    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
-        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full" data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
         <header class="topbar" data-navbarbg="skin5">
             <nav class="navbar top-navbar navbar-expand-md navbar-dark">
                 <div class="navbar-header" data-logobg="skin5">
@@ -44,18 +53,15 @@
               Assembleia de Deus 
             </span>
           </a>
-                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
-                            class="ti-menu ti-close"></i></a>
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
                 </div>
                 <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
                     <ul class="navbar-nav float-start me-auto">
                         <li class="nav-item d-none d-lg-block">
-                            <a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)"
-                                data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a>
+                            <a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="d-none d-md-block">Create New <i class="fa fa-angle-down"></i></span>
                                 <span class="d-block d-md-none"><i class="fa fa-plus"></i></span>
                             </a>
@@ -74,8 +80,7 @@
                         <!-- Search -->
                         <!-- ============================================================== -->
                         <li class="nav-item search-box">
-                            <a class="nav-link waves-effect waves-dark" href="javascript:void(0)"><i
-                                    class="mdi mdi-magnify fs-4"></i></a>
+                            <a class="nav-link waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-magnify fs-4"></i></a>
                             <form class="app-search position-absolute">
                                 <input type="text" class="form-control" placeholder="Search &amp; enter" />
                                 <a class="srh-btn"><i class="mdi mdi-window-close"></i></a>
@@ -90,8 +95,7 @@
                         <!-- Comment -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="mdi mdi-bell font-24"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -112,8 +116,7 @@
                         <!-- Messages -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" id="2" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" id="2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="font-24 mdi mdi-comment-processing"></i>
                             </a>
                             <ul class="
@@ -205,30 +208,22 @@
                     waves-effect waves-dark
                     pro-pic
                   " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle"
-                                    width="31" />
+                                <img src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31" />
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end user-dd animated"
-                                aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="javascript:void(0)"><i
-                                        class="mdi mdi-account me-1 ms-1"></i> My
+                            <ul class="dropdown-menu dropdown-menu-end user-dd animated" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="mdi mdi-account me-1 ms-1"></i> My
                                     Profile</a>
-                                <a class="dropdown-item" href="javascript:void(0)"><i
-                                        class="mdi mdi-wallet me-1 ms-1"></i> My
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="mdi mdi-wallet me-1 ms-1"></i> My
                                     Balance</a>
-                                <a class="dropdown-item" href="javascript:void(0)"><i
-                                        class="mdi mdi-email me-1 ms-1"></i> Inbox</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="mdi mdi-email me-1 ms-1"></i> Inbox</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="javascript:void(0)"><i
-                                        class="mdi mdi-settings me-1 ms-1"></i> Account
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="mdi mdi-settings me-1 ms-1"></i> Account
                                     Setting</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="javascript:void(0)"><i
-                                        class="fa fa-power-off me-1 ms-1"></i> Logout</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-power-off me-1 ms-1"></i> Logout</a>
                                 <div class="dropdown-divider"></div>
                                 <div class="ps-4 p-10">
-                                    <a href="javascript:void(0)"
-                                        class="btn btn-sm btn-success btn-rounded text-white">View Profile</a>
+                                    <a href="javascript:void(0)" class="btn btn-sm btn-success btn-rounded text-white">View Profile</a>
                                 </div>
                             </ul>
                         </li>
@@ -245,7 +240,7 @@
         <!-- ============================================================== -->
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
-       <?php include('menuTesoureiro.php')?>
+        <?php include('menuTesoureiro.php') ?>
 
         <div class="page-wrapper">
             <div class="page-breadcrumb">
@@ -271,7 +266,7 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-body ">
-                                    <?php  if( $_GET['sucesso'] ):?>
+                                <?php  if( $_GET['sucesso'] ):?>
                                     <div class="alert alert-warning alert-dismissible fade show cor" role="alert">
                                         <strong>Sucesso</strong> As informaçoes do formulario foram salvas com sucesso.
                                         <button type="button" class="btn-close" data-bs-dismiss="alert"
@@ -284,34 +279,46 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <?php endif  ?>
-
-                                    <form action="validaFormularioIgreja.php" method="post" autocomplete="off">
+                                    <form action="validaFormularioDizimista.php" method="post" autocomplete="off">
                                         <div class="form-row">
                                             <label>
-                                                <h4>Cadastro Igreja</h4>
+                                                <h4>Cadastro de dizimistas AD-53</h4>
                                             </label>
                                             <div class="col lista">
-                                                <input type="text" name="dirigente" required class="form-control"
-                                                    placeholder="Dirigente local">
+                                                <input type="text" name="nome_dizimista" required class="form-control" placeholder="Nome do dizimista">
                                             </div>
                                             <div class="col lista">
-                                                <input type="text" name="nome_igreja" required class="form-control"
-                                                    placeholder="Nome da igreja">
+                                                <input type="text" name="email_dizimista" required class="form-control" placeholder="Email">
                                             </div>
                                             <div class="col lista">
-                                                <input type="text" name="cidade" required class="form-control"
-                                                    placeholder="Cidade">
+                                                <input type="text" name="cidade" required class="form-control" placeholder="Cidade">
                                             </div>
                                             <div class="col lista">
-                                                <input type="text" name="barrio" required class="form-control"
-                                                    placeholder="Barrio">
+                                                <input type="text" name="barrio" required class="form-control" placeholder="Barrio">
                                             </div>
                                             <div class="col lista">
-                                                <input type="text" name="endereco" required class="form-control"
-                                                    placeholder="Endereço">
+                                                <input type="text" name="endereco" required class="form-control" placeholder="Endereço">
                                             </div>
-                                            <button type="submit" name="cadastrar"
-                                                class="btn btn-primary cor-btn">Cadastrar</button>
+                                            <div class="col lista">
+                                                <input type="tel" name="telefone" required class="form-control" placeholder="Telefone">
+                                            </div>
+                                            <div class="col lista">
+                                                <select class="form-select lista" aria-label="Default select example" name="cargo" required>
+                                                    <option value="membro">Membro</option>
+                                                    <option value="auxiliar">Auxiliar</option>
+                                                    <option value="diaconato">Diaconato</option>
+                                                    <option value="pastor">Pastor</option>
+                                                    <option value="ministerio_de_louvor">Ministerio De louvor</option>
+                                                </select>
+                                            </div>
+                                            <div class="col lista">
+                                                <select class="form-select lista" aria-label="Default select example" name="fk_igreja" required>
+                                                    <?php foreach ($query->getSelect('igrejas') as $igreja):  ?>
+                                                        <option value='<?php echo $igreja['id'] ?>'><?php echo $igreja['nome_igreja'] ?></option>
+                                                    <?php endforeach ?>
+                                                </select>
+                                            </div>
+                                            <button type="submit" name="cadastrar" class="btn btn-primary cor-btn">Cadastrar</button>
                                         </div>
                                     </form>
                                 </div>
