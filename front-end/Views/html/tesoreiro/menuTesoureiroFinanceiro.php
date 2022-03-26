@@ -15,7 +15,7 @@
                                     class="hide-menu">Lançar dizimimo</span></a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="cadastrosDizimistas.php"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="lancarofertas.php"
                                 aria-expanded="false"><i class="mdi  mdi-cash-multiple"></i><span
                                     class="hide-menu">Lançar ofertas</span></a>
                         </li>

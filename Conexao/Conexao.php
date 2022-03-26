@@ -15,7 +15,7 @@ class Conexao {
 
         try {
             
-            $this->db = new PDO("host=$host;dbname=$banco", "$usuario", "$senha");
+            $this->db = new PDO("$dns:host=$host;dbname=$banco", "$usuario", "$senha");
         }catch (PDOException $e){
             echo  "Falha ao conctar ao banco de dados";
             die($e->getMessage());
