@@ -17,7 +17,7 @@
     <title> Igreja AD-53 </title>
     <link rel="stylesheet" href="../../cssTest/style.css">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/AD.jpg" />
     <!-- Custom CSS -->
     <link href="../../assets/libs/flot/css/float-chart.css" rel="stylesheet" />
     <!-- Custom CSS -->
@@ -56,10 +56,10 @@
                     </a>
                     <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
                 </div>
-                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                <div  class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
                     <ul class="navbar-nav float-start me-auto">
                         <li class="nav-item d-none d-lg-block">
-                            <a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a>
+                            <a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i id='btn-div' class="mdi mdi-menu font-24"></i></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -247,7 +247,7 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">Assembleia de Deus AD53 </h4>
+                        <h4 id="titulo" class="page-title">Assembleia de Deus AD53 </h4>
                         <div class="ms-auto text-end">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
@@ -282,16 +282,16 @@
                                     <form action="validaFormularioCadastrosDizimistas.php" method="post" autocomplete="off">
                                         <div id="bt" class="form-row">
                                             <label>
-                                                <h4>Lançar dizimo</h4>
+                                                <h4>Lançar ofertas</h4>
                                             </label>
-                                            <div class="col lista">
+                                            <div id="box" class="col lista">
                                                 <select class="form-select lista" aria-label="Default select example" name="fk_igreja" required>
                                                     <?php foreach ($query->getSelect('igrejas') as $igreja):  ?>
                                                         <option value='<?php echo $igreja['id'] ?>'><?php echo $igreja['nome_igreja'] ?></option>
                                                     <?php endforeach ?>
                                                 </select>
                                             </div>
-                                            <div class="col lista">
+                                            <div id="box" class="col lista">
                                                 <select class="form-select lista" aria-label="Default select example" name="fk_dizimista" required>
                                                     <?php foreach ($query->getSelect('dizimistas') as $dizimistas):  ?>
                                                         <option value='<?php echo $dizimistas['id'] ?>'><?php echo $dizimistas['nome_dizimista'] ?></option>
@@ -304,10 +304,29 @@
                                             <div class="col lista">
                                                 <input type="date" name="data" required class="form-control" placeholder="data">
                                             </div>
+                                            
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Valor R$: </span>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                            </div>
                                             <div class="col lista">
+                                                <select class="form-select lista" aria-label="Default select example" name="culto" required>
+                                                    <option value="culto">Culto</option>
+                                                    <option value="culto_de_jovens">Culto de Jovens</option>
+                                                    <option value="culto_de_doutrina">Culto de Doutrina</option>
+                                                    <option value="culto_de_missoes">Culto de missões</option>
+                                                    <option value="culto_de_criancas">Culto de crianças</option>
+                                                    <option value="culto_de_santa_ceia">Culto de Santa Ceia</option>
+                                                </select>
+                                            </div>
+                                            <!-- input valor
+                                                <div class="col lista">
                                                 <input id="valor" type="number" name="valor" required class="form-control" placeholder="valor">
                                             </div>
-                                            <button type="submit" name="cadastrar" class="botao" >Lançar</button>
+                                            -->
+                                            <button type="submit" id="teste" name="cadastrar" class="botao">Lançar</button>
                                         </div>
                                     </form>
                                 </div>
@@ -349,7 +368,7 @@
 
     <footer class="footer text-center">
         Develop Isael Silva
-        <a href="https://www.wrappixel.com">P-Contas</a>.
+        <a href="https://www.wrappixel.com">Assembleia de Deus</a>.
     </footer>
     </div>
     </div>

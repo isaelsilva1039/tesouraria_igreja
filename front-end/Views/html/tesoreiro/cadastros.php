@@ -13,7 +13,8 @@
     <meta name="robots" content="noindex,nofollow" />
     <title> Igreja AD-53 </title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png" />
+    <link rel="stylesheet" href="../../cssTest/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/AD.jpg" />
     <!-- Custom CSS -->
     <link href="../../assets/libs/flot/css/float-chart.css" rel="stylesheet" />
     <!-- Custom CSS -->
@@ -293,7 +294,7 @@
                                     <?php endif  ?>
 
                                     <form action="validaFormularioIgreja.php" method="post" autocomplete="off">
-                                        <div class="form-row">
+                                        <div id="bt" class="form-row">
                                             <label>
                                                 <h4>Cadastro Igreja</h4>
                                             </label>
@@ -318,7 +319,7 @@
                                                     placeholder="Endereço">
                                             </div>
                                             <button type="submit" name="cadastrar"
-                                                class="btn btn-primary cor-btn">Cadastrar</button>
+                                                class="botao">Cadastrar</button>
                                         </div>
                                     </form>
                                 </div>

@@ -12,8 +12,9 @@
     content="Matrix Admin Lite Free Version is powerful and clean admin dashboard template, inpired from Bootstrap Framework" />
   <meta name="robots" content="noindex,nofollow" />
   <title>Assembleia de Deus</title> 
+  <link rel="stylesheet" href="../../cssTest/style.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/AD.jpg" />
   <!-- Favicon icon -->
-  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png" />
   <!-- Custom CSS -->
   <link href="../../assets/libs/flot/css/float-chart.css" rel="stylesheet" />
   <!-- Custom CSS -->
@@ -52,11 +53,11 @@
           <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
               class="ti-menu ti-close"></i></a>
         </div>
-        <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+        <div class="navbar-collapse collapse" id="container" id="navbarSupportedContent" data-navbarbg="skin5">
           <ul class="navbar-nav float-start me-auto">
             <li class="nav-item d-none d-lg-block">
               <a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)"
-                data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a>
+                data-sidebartype="mini-sidebar"><i id='btn-div' class="mdi mdi-menu font-24"></i></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -250,7 +251,7 @@
           <ul id="sidebarnav" class="pt-4">
             <li class="sidebar-item">
               <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashbord.php" aria-expanded="false"><i
-                  class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard</span></a>
+                  class="mdi mdi-view-dashboard"></i><span class="hide-menu">Principal</span></a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link waves-effect waves-dark sidebar-link" href="cadastros.php" aria-expanded="false"><i
@@ -272,7 +273,7 @@
       <div class="page-breadcrumb">
         <div class="row">
           <div class="col-12 d-flex no-block align-items-center">
-            <h4 class="page-title">Dashboard </h4>
+            <h4 id="titulo" class="page-title">Menu Principal</h4>
             <div class="ms-auto text-end">
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -285,120 +286,53 @@
             </div>
           </div>
         </div>
+        
       </div>
-
+      
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6 col-lg-2 col-xlg-3">
-            <div class="card card-hover">
-              <div class="box bg-cyan text-center">
-                <h1 class="font-light text-white">
-                  <i class="mdi mdi-view-dashboard"></i>
-                </h1>
-                <h6 class="text-white">Dashboard</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xlg-3">
-            <div class="card card-hover">
-              <div class="box bg-success text-center">
-                <h1 class="font-light text-white">
-                  <i class="mdi mdi-chart-areaspline"></i>
-                </h1>
-                <h6 class="text-white">Charts</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-2 col-xlg-3">
-            <div class="card card-hover">
-              <div class="box bg-warning text-center">
-                <h1 class="font-light text-white">
-                  <i class="mdi mdi-collage"></i>
-                </h1>
-                <h6 class="text-white">Widgets</h6>
-              </div>
-            </div>
-          </div>
-          <!-- Column -->
-          <div class="col-md-6 col-lg-2 col-xlg-3">
-            <div class="card card-hover">
-              <div class="box bg-danger text-center">
-                <h1 class="font-light text-white">
-                  <i class="mdi mdi-border-outside"></i>
-                </h1>
-                <h6 class="text-white">Tables</h6>
-              </div>
-            </div>
-          </div>
-          <!-- Column -->
-          <div class="col-md-6 col-lg-2 col-xlg-3">
-            <div class="card card-hover">
-              <div class="box bg-info text-center">
-                <h1 class="font-light text-white">
-                  <i class="mdi mdi-arrow-all"></i>
-                </h1>
-                <h6 class="text-white">Full Width</h6>
-              </div>
-            </div>
-          </div>
-          <!-- Column -->
-          <!-- Column -->
-          <div class="col-md-6 col-lg-4 col-xlg-3">
-            <div class="card card-hover">
-              <div class="box bg-danger text-center">
-                <h1 class="font-light text-white">
-                  <i class="mdi mdi-receipt"></i>
-                </h1>
-                <h6 class="text-white">Forms</h6>
-              </div>
-            </div>
-          </div>
-          <!-- Column -->
-          <div class="col-md-6 col-lg-2 col-xlg-3">
-            <div class="card card-hover">
-              <div class="box bg-info text-center">
-                <h1 class="font-light text-white">
-                  <i class="mdi mdi-relative-scale"></i>
-                </h1>
-                <h6 class="text-white">Buttons</h6>
-              </div>
-            </div>
-          </div>
-          <!-- Column -->
-          <div class="col-md-6 col-lg-2 col-xlg-3">
-            <div class="card card-hover">
-              <div class="box bg-cyan text-center">
-                <h1 class="font-light text-white">
-                  <i class="mdi mdi-pencil"></i>
-                </h1>
-                <h6 class="text-white">Elements</h6>
-              </div>
-            </div>
-          </div>
-          <!-- Column -->
-          <div class="col-md-6 col-lg-2 col-xlg-3">
-            <div class="card card-hover">
-              <div class="box bg-success text-center">
-                <h1 class="font-light text-white">
-                  <i class="mdi mdi-calendar-check"></i>
-                </h1>
-                <h6 class="text-white">Calnedar</h6>
-              </div>
-            </div>
-          </div>
-          <!-- Column -->
-          <div class="col-md-6 col-lg-2 col-xlg-3">
-            <div class="card card-hover">
-              <div class="box bg-warning text-center">
-                <h1 class="font-light text-white">
-                  <i class="mdi mdi-alert"></i>
-                </h1>
-                <h6 class="text-white">Errors</h6>
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="bg-info p-10 text-white text-center">
+                            <i class="mdi mdi-account fs-3 mb-1 font-16"></i>
+                            <h5 class="mb-0 mt-1">2540</h5>
+                            <small class="font-light">Total de dizimistas</small>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="bg-info p-10 text-white text-center">
+                            <i class="mdi mdi-plus fs-3 font-16"></i>
+                            <h5 class="mb-0 mt-1">120</h5>
+                            <small class="font-light">Total de congregações</small>
+                          </div>
+                        </div>
+                        <div class="col-6 mt-3">
+                          <div class="bg-info p-10 text-white text-center">
+                            <i class="mdi mdi-cart fs-3 mb-1 font-16"></i>
+                            <h5 class="mb-0 mt-1">656</h5>
+                            <small class="font-light">Total de membros</small>
+                          </div>
+                        </div>
+                        <div class="col-6 mt-3">
+                          <div class="bg-info p-10 text-white text-center">
+                            <i class="mdi mdi-tag fs-3 mb-1 font-16"></i>
+                            <h5 class="mb-0 mt-1">9540</h5>
+                            <small class="font-light">Caixa da igreja</small>
+                          </div>
+                        
+                        </div>
+                      </div>
+                    </div>
+                    <!-- column -->
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <!-- Column -->
         </div>
+        
         <!-- ============================================================== -->
         <!-- Sales chart -->
         <!-- ============================================================== -->
@@ -425,14 +359,16 @@
             </div>
           </div>
         </div>
+        
       </div>
     
-      <footer class="footer text-center">
+    </div>
+    <footer class="footer text-center">
         Develop Isael Silva
         <a href="https://www.wrappixel.com">Assembleia de Deus</a>.
       </footer>
-    </div>
   </div>
+  
   <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
   <!-- Bootstrap tether Core JavaScript -->
   <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

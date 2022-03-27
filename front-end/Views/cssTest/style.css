@@ -1,0 +1,94 @@
+#menu-topo{
+    background-color: #27A9E3;
+}
+
+#nav-bar{
+    background-color: #ffffff;
+}
+
+#titulo{
+    color: #27A9E3;
+}
+
+#bt{
+    text-align: center;
+}
+
+.botao {
+    width: 5.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: #27A9E3;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 0.625em;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   button:hover {
+    color: #013b91;
+   }
+   
+   button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+input:hover{
+    border: 2px solid #27A9E3;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+select {
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+select:hover{
+    border: 2px solid #27A9E3;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+footer{
+    margin-left: 100px;
+}
