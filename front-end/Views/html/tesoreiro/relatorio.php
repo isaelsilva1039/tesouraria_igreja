@@ -12,6 +12,8 @@
   <title>Assembleia de Deus</title>
   <link rel="stylesheet" href="../../cssTest/style.css">
   <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/AD.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap4.min.css">
   <!-- Favicon icon -->
   <!-- Custom CSS -->
   <link href="../../assets/libs/flot/css/float-chart.css" rel="stylesheet" />
@@ -280,68 +282,47 @@
             </div>
           </div>
         </div>
-
+        <table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>2011/07/25</td>
+                <td>$170,750</td>
+            </tr>
+            <tr>
+                <td>Ashton Cox</td>
+                <td>Junior Technical Author</td>
+                <td>San Francisco</td>
+                <td>66</td>
+                <td>2009/01/12</td>
+                <td>$86,000</td>
+            </tr>
+          
+    </table>
       </div>
 
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-4">
-                <div class="bg-info p-10 text-white text-center">
-                  <i class="mdi mdi-account fs-3 mb-1 font-16"></i>
-                  <h5 class="mb-0 mt-1">2540</h5>
-                  <small class="font-light">Total de dizimistas</small>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="bg-info p-10 text-white text-center">
-                  <i class="mdi mdi-church fs-3 font-16"></i>
-                  <h5 class="mb-0 mt-1">120</h5>
-                  <small class="font-light">Total de congregações</small>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="bg-info p-10 text-white text-center">
-                  <i class="mdi mdi-account-multiple fs-3 mb-1 font-16"></i>
-                  <h5 class="mb-0 mt-1">656</h5>
-                  <small class="font-light">Total de membros</small>
-                </div>
-              </div>
-              <div class="col-4 mt-3">
-                <div class="bg-info p-10 text-white text-center">
-                  <i class="mdi mdi-clipboard-text fs-3 mb-1 font-16"></i>
-                  <h5 class="mb-0 mt-1">656</h5>
-                  <small class="font-light">Despesas geral</small>
-                </div>
-              </div>
-              <div class="col-4 mt-3">
-                <div class="bg-danger p-10 text-white text-center">
-                  <i class="mdi mdi-clipboard-text fs-3 mb-1 font-16"></i>
-                  <h5 class="mb-0 mt-1">656</h5>
-                  <small class="font-light">Despesas do mês</small>
-                </div>
-              </div>
-              
-              <div class="col-4 mt-3">
-                <div class="bg-success p-10 text-white text-center">
-                  <i class="mdi mdi-currency-usd fs-3 mb-1 font-16"></i>
-                  <h5 class="mb-0 mt-1">9540</h5>
-                  <small class="font-light">Saldo do mês</small>
-                </div>
-              </div>
-              <div class="col-12 mt-3">
-                <div class="bg-success p-10 text-white text-center">
-                  <i class="mdi mdi-currency-usd fs-3 mb-1 font-16"></i>
-                  <h5 class="mb-0 mt-1">9540</h5>
-                  <small class="font-bold">Saldo total</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- column -->
-        </div>
-      </div>
+      
     </div>
   </div>
   </div>
@@ -383,7 +364,7 @@
     <a href="https://www.wrappixel.com">Assembleia de Deus</a>.
   </footer>
   </div>
-
+    <script src="scriptTable.js"></script>
   <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
   <!-- Bootstrap tether Core JavaScript -->
   <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
