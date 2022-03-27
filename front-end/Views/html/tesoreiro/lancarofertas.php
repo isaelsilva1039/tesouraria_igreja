@@ -274,7 +274,7 @@
                                         </div>
                                     <?php endif  ?>
 
-                                    <form action="validaFormularioCadastrosDizimistas.php" method="post" autocomplete="off">
+                                    <form action="validarFormularioLancarOferta.php" method="post" autocomplete="off">
                                         <div id="bt" class="form-row">
                                             <label>
                                                 <h4>Lançar ofertas</h4>
@@ -302,12 +302,12 @@
                                             
                                             <div class="input-group mb-3">
                                                 <div class="input-group-prepend">
-                                                    <span class="input-group-text">Valor R$: </span>
+                                                    <span class="input-group-text" name="valor">Valor R$: </span>
                                                 </div>
-                                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                <input type="text" name="valor" class="form-control" aria-label="Amount (to the nearest dollar)">
                                             </div>
                                             <div class="col lista">
-                                                <select class="form-select lista" aria-label="Default select example" name="culto" required>
+                                                <select class="form-select lista" aria-label="Default select example" name="tipoCulto" required>
                                                     <option value="culto">Culto</option>
                                                     <option value="culto_de_domingo">Culto de Domingo</option>
                                                     <option value="culto_de_jovens">Culto de Jovens</option>

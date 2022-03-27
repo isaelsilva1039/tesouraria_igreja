@@ -6,12 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="keywords"
-    content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Matrix lite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, Matrix admin lite design, Matrix admin lite dashboard bootstrap 5 dashboard template" />
-  <meta name="description"
-    content="Matrix Admin Lite Free Version is powerful and clean admin dashboard template, inpired from Bootstrap Framework" />
+  <meta name="keywords" content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Matrix lite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, Matrix admin lite design, Matrix admin lite dashboard bootstrap 5 dashboard template" />
+  <meta name="description" content="Matrix Admin Lite Free Version is powerful and clean admin dashboard template, inpired from Bootstrap Framework" />
   <meta name="robots" content="noindex,nofollow" />
-  <title>Assembleia de Deus</title> 
+  <title>Assembleia de Deus</title>
   <link rel="stylesheet" href="../../cssTest/style.css">
   <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/AD.jpg" />
   <!-- Favicon icon -->
@@ -37,31 +35,27 @@
       <div class="lds-pos"></div>
     </div>
   </div>
-  <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
-    data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+  <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full" data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
     <header class="topbar" data-navbarbg="skin5">
       <nav class="navbar top-navbar navbar-expand-md navbar-dark">
         <div class="navbar-header" data-logobg="skin5">
           <a class="navbar-brand" href="index.php">
             <b class="logo-icon ps-2">
-            <img src="https://www.serfautec.com.br/images/igraja-serfautec.jpg" alt="homepage" class="light-logo" style="height: 40px; border-radius: 100px; width: 50px; margin-left: -10px;"/>
+              <img src="https://www.serfautec.com.br/images/igraja-serfautec.jpg" alt="homepage" class="light-logo" style="height: 40px; border-radius: 100px; width: 50px; margin-left: -10px;" />
             </b>
             <span class="logo-text ms-2">
-              Assembleia de Deus 
+              Assembleia de Deus
             </span>
           </a>
-          <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
-              class="ti-menu ti-close"></i></a>
+          <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
         </div>
         <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
           <ul class="navbar-nav float-start me-auto">
             <li class="nav-item d-none d-lg-block">
-              <a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)"
-                data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a>
+              <a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <span class="d-none d-md-block">Opções<i class="fa fa-angle-down"></i></span>
                 <span class="d-block d-md-none"><i class="fa fa-plus"></i></span>
               </a>
@@ -80,8 +74,7 @@
             <!-- Search -->
             <!-- ============================================================== -->
             <li class="nav-item search-box">
-              <a class="nav-link waves-effect waves-dark" href="javascript:void(0)"><i
-                  class="mdi mdi-magnify fs-4"></i></a>
+              <a class="nav-link waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-magnify fs-4"></i></a>
               <form class="app-search position-absolute">
                 <input type="text" class="form-control" placeholder="Search &amp; enter" />
                 <a class="srh-btn"><i class="mdi mdi-window-close"></i></a>
@@ -96,8 +89,7 @@
             <!-- Comment -->
             <!-- ============================================================== -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="mdi mdi-bell font-24"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -118,8 +110,7 @@
             <!-- Messages -->
             <!-- ============================================================== -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" id="2" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" id="2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="font-24 mdi mdi-comment-processing"></i>
               </a>
               <ul class="
@@ -250,26 +241,17 @@
         <nav class="sidebar-nav">
           <ul id="sidebarnav" class="pt-4">
             <li class="sidebar-item">
-              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashbord.php" aria-expanded="false"><i
-                  class="mdi mdi-view-dashboard"></i><span class="hide-menu">Principal</span></a>
+              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashbord.php" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Principal</span></a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="cadastros.php" aria-expanded="false"><i
-                  class="mdi  mdi-account-plus"></i><span class="hide-menu">Cadastros</span></a>
+              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="cadastros.php" aria-expanded="false"><i class="mdi  mdi-account-plus"></i><span class="hide-menu">Cadastros</span></a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="financeiro.php" aria-expanded="false"><i
-                  class="mdi  mdi-currency-usd"></i><span class="hide-menu">Financeiro</span></a>
+              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="financeiro.php" aria-expanded="false"><i class="mdi  mdi-currency-usd"></i><span class="hide-menu">Financeiro</span></a>
             </li>
             <li class="sidebar-item">
-                <a
-                  class="sidebar-link waves-effect waves-dark sidebar-link"
-                  href="despesas.php"
-                  aria-expanded="false"
-                  ><i class="mdi mdi-chart-bubble"></i
-                  ><span class="hide-menu">Despesas</span></a
-                >
-              </li>
+              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="despesas.php" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Despesas</span></a>
+            </li>
             <!---->
           </ul>
         </nav>
@@ -295,89 +277,89 @@
             </div>
           </div>
         </div>
-        
+
       </div>
-      
+
       <div class="container-fluid">
         <div class="row">
-                    <div class="col-md-12">
-                      <div class="row">
-                        <div class="col-6">
-                          <div class="bg-info p-10 text-white text-center">
-                            <i class="mdi mdi-account fs-3 mb-1 font-16"></i>
-                            <h5 class="mb-0 mt-1">2540</h5>
-                            <small class="font-light">Total de dizimistas</small>
-                          </div>
-                        </div>
-                        <div class="col-6">
-                          <div class="bg-info p-10 text-white text-center">
-                            <i class="mdi mdi-plus fs-3 font-16"></i>
-                            <h5 class="mb-0 mt-1">120</h5>
-                            <small class="font-light">Total de congregações</small>
-                          </div>
-                        </div>
-                        <div class="col-6 mt-3">
-                          <div class="bg-info p-10 text-white text-center">
-                            <i class="mdi mdi-cart fs-3 mb-1 font-16"></i>
-                            <h5 class="mb-0 mt-1">656</h5>
-                            <small class="font-light">Total de membros</small>
-                          </div>
-                        </div>
-                        <div class="col-6 mt-3">
-                          <div class="bg-info p-10 text-white text-center">
-                            <i class="mdi mdi-tag fs-3 mb-1 font-16"></i>
-                            <h5 class="mb-0 mt-1">9540</h5>
-                            <small class="font-light">Caixa da igreja</small>
-                          </div>
-                        
-                        </div>
-                      </div>
-                    </div>
-                    <!-- column -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Column -->
-        </div>
-        
-        <!-- ============================================================== -->
-        <!-- Sales chart -->
-        <!-- ============================================================== -->
-        <div class="row">
           <div class="col-md-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="d-md-flex align-items-center">
-                  <!--aqui pode ter um card-->
+            <div class="row">
+              <div class="col-6">
+                <div class="bg-info p-10 text-white text-center">
+                  <i class="mdi mdi-account fs-3 mb-1 font-16"></i>
+                  <h5 class="mb-0 mt-1">2540</h5>
+                  <small class="font-light">Total de dizimistas</small>
                 </div>
-                <div class="row">
-                  <!-- column -->
-                  <div class="col-lg-9">
-                    <!--AQUI PODE FICAR UM CARD-->
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="row">
-                      <!--aqui fica um card a direita-->
-                    </div>
-                  </div>
+              </div>
+              <div class="col-6">
+                <div class="bg-info p-10 text-white text-center">
+                  <i class="mdi mdi-plus fs-3 font-16"></i>
+                  <h5 class="mb-0 mt-1">120</h5>
+                  <small class="font-light">Total de congregações</small>
                 </div>
-                <!-- column -->
+              </div>
+              <div class="col-6 mt-3">
+                <div class="bg-info p-10 text-white text-center">
+                  <i class="mdi mdi-cart fs-3 mb-1 font-16"></i>
+                  <h5 class="mb-0 mt-1">656</h5>
+                  <small class="font-light">Total de membros</small>
+                </div>
+              </div>
+              <div class="col-6 mt-3">
+                <div class="bg-info p-10 text-white text-center">
+                  <i class="mdi mdi-tag fs-3 mb-1 font-16"></i>
+                  <h5 class="mb-0 mt-1">9540</h5>
+                  <small class="font-light">Caixa da igreja</small>
+                </div>
+
               </div>
             </div>
           </div>
+          <!-- column -->
         </div>
-        
       </div>
-    
     </div>
-    <footer class="footer text-center">
-        Develop Isael Silva
-        <a href="https://www.wrappixel.com">Assembleia de Deus</a>.
-      </footer>
   </div>
-  
+  </div>
+  <!-- Column -->
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- Sales chart -->
+  <!-- ============================================================== -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-md-flex align-items-center">
+            <!--aqui pode ter um card-->
+          </div>
+          <div class="row">
+            <!-- column -->
+            <div class="col-lg-9">
+              <!--AQUI PODE FICAR UM CARD-->
+            </div>
+            <div class="col-lg-3">
+              <div class="row">
+                <!--aqui fica um card a direita-->
+              </div>
+            </div>
+          </div>
+          <!-- column -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  </div>
+  <footer class="footer text-center">
+    Develop Isael Silva
+    <a href="https://www.wrappixel.com">Assembleia de Deus</a>.
+  </footer>
+  </div>
+
   <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
   <!-- Bootstrap tether Core JavaScript -->
   <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

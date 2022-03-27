@@ -236,7 +236,7 @@
         <!-- ============================================================== -->
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
-        <?php include('menuTesoureiroFinanceiro.php') ?>
+        <?php include('menuTesoureiroDespesas.php') ?>
 
         <div class="page-wrapper">
             <div class="page-breadcrumb">
