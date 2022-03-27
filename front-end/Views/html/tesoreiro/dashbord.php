@@ -62,7 +62,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                <span class="d-none d-md-block">Create New <i class="fa fa-angle-down"></i></span>
+                <span class="d-none d-md-block">Opções<i class="fa fa-angle-down"></i></span>
                 <span class="d-block d-md-none"><i class="fa fa-plus"></i></span>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -261,6 +261,15 @@
               <a class="sidebar-link waves-effect waves-dark sidebar-link" href="financeiro.php" aria-expanded="false"><i
                   class="mdi  mdi-currency-usd"></i><span class="hide-menu">Financeiro</span></a>
             </li>
+            <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link"
+                  href="despesas.php"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-chart-bubble"></i
+                  ><span class="hide-menu">Despesas</span></a
+                >
+              </li>
             <!---->
           </ul>
         </nav>
