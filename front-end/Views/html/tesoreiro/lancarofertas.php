@@ -15,8 +15,9 @@
     <meta name="description" content="Matrix Admin Lite Free Version is powerful and clean admin dashboard template, inpired from Bootstrap Framework" />
     <meta name="robots" content="noindex,nofollow" />
     <title> Igreja AD-53 </title>
+    <link rel="stylesheet" href="../../cssTest/style.css">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/AD.jpg" />
     <!-- Custom CSS -->
     <link href="../../assets/libs/flot/css/float-chart.css" rel="stylesheet" />
     <!-- Custom CSS -->
@@ -45,20 +46,20 @@
         <header class="topbar" data-navbarbg="skin5">
             <nav class="navbar top-navbar navbar-expand-md navbar-dark">
                 <div class="navbar-header" data-logobg="skin5">
-                <a class="navbar-brand" href="index.php">
-            <b class="logo-icon ps-2">
-            <img src="https://www.serfautec.com.br/images/igraja-serfautec.jpg" alt="homepage" class="light-logo" style="height: 40px; border-radius: 100px; width: 50px; margin-left: -10px;"/>
-            </b>
-            <span class="logo-text ms-2">
-              Assembleia de Deus 
-            </span>
-          </a>
+                    <a class="navbar-brand" href="index.php">
+                        <b class="logo-icon ps-2">
+                            <img src="https://www.serfautec.com.br/images/igraja-serfautec.jpg" alt="homepage" class="light-logo" style="height: 40px; border-radius: 100px; width: 50px; margin-left: -10px;" />
+                        </b>
+                        <span class="logo-text ms-2">
+                            Assembleia de Deus
+                        </span>
+                    </a>
                     <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
                 </div>
-                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                <div  class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
                     <ul class="navbar-nav float-start me-auto">
                         <li class="nav-item d-none d-lg-block">
-                            <a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a>
+                            <a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i id='btn-div' class="mdi mdi-menu font-24"></i></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -240,13 +241,13 @@
         <!-- ============================================================== -->
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
-        <?php include('menuTesoureiro.php') ?>
+        <?php include('menuTesoureiroFinanceiro.php') ?>
 
         <div class="page-wrapper">
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">Assembleia de Deus AD53 </h4>
+                        <h4 id="titulo" class="page-title">Assembleia de Deus AD53 </h4>
                         <div class="ms-auto text-end">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
@@ -266,59 +267,66 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-body ">
-                                <?php  if( $_GET['sucesso'] ):?>
-                                    <div class="alert alert-warning alert-dismissible fade show cor" role="alert">
-                                        <strong>Sucesso</strong> As informaçoes do formulario foram salvas com sucesso.
-                                        <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <?php elseif( $_GET['naoCadastrado'] ):?>
-                                    <div class="alert alert-warning alert-dismissible fade show cor2" role="alert">
-                                        <strong>Erro</strong> Tente novamente .
-                                        <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                            aria-label="Close"></button>
-                                    </div>
+                                    <?php if ($_GET['sucesso']) : ?>
+                                        <div class="alert alert-warning alert-dismissible fade show cor" role="alert">
+                                            <strong>Sucesso</strong> As informaçoes do formulario foram salvas com sucesso.
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>
+                                    <?php elseif ($_GET['naoCadastrado']) : ?>
+                                        <div class="alert alert-warning alert-dismissible fade show cor2" role="alert">
+                                            <strong>Erro</strong> Tente novamente .
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>
                                     <?php endif  ?>
-                                    <form action="validaFormularioDizimista.php" method="post" autocomplete="off">
-                                        <div class="form-row">
+
+                                    <form action="validaFormularioCadastrosDizimistas.php" method="post" autocomplete="off">
+                                        <div id="bt" class="form-row">
                                             <label>
-                                                <h4>Cadastro de dizimistas AD-53</h4>
+                                                <h4>Lançar ofertas</h4>
                                             </label>
-                                            <div class="col lista">
-                                                <input type="text" name="nome_dizimista" required class="form-control" placeholder="Nome do dizimista">
-                                            </div>
-                                            <div class="col lista">
-                                                <input type="text" name="email_dizimista" required class="form-control" placeholder="Email">
-                                            </div>
-                                            <div class="col lista">
-                                                <input type="text" name="cidade" required class="form-control" placeholder="Cidade">
-                                            </div>
-                                            <div class="col lista">
-                                                <input type="text" name="barrio" required class="form-control" placeholder="Barrio">
-                                            </div>
-                                            <div class="col lista">
-                                                <input type="text" name="endereco" required class="form-control" placeholder="Endereço">
-                                            </div>
-                                            <div class="col lista">
-                                                <input type="tel" name="telefone" required class="form-control" placeholder="Telefone">
-                                            </div>
-                                            <div class="col lista">
-                                                <select class="form-select lista" aria-label="Default select example" name="cargo" required>
-                                                    <option value="membro">Membro</option>
-                                                    <option value="auxiliar">Auxiliar</option>
-                                                    <option value="diaconato">Diaconato</option>
-                                                    <option value="pastor">Pastor</option>
-                                                    <option value="ministerio_de_louvor">Ministerio De louvor</option>
-                                                </select>
-                                            </div>
-                                            <div class="col lista">
+                                            <div id="box" class="col lista">
                                                 <select class="form-select lista" aria-label="Default select example" name="fk_igreja" required>
                                                     <?php foreach ($query->getSelect('igrejas') as $igreja):  ?>
                                                         <option value='<?php echo $igreja['id'] ?>'><?php echo $igreja['nome_igreja'] ?></option>
                                                     <?php endforeach ?>
                                                 </select>
                                             </div>
-                                            <button type="submit" name="cadastrar" class="btn btn-primary cor-btn">Cadastrar</button>
+                                            <div id="box" class="col lista">
+                                                <select class="form-select lista" aria-label="Default select example" name="fk_dizimista" required>
+                                                    <?php foreach ($query->getSelect('dizimistas') as $dizimistas):  ?>
+                                                        <option value='<?php echo $dizimistas['id'] ?>'><?php echo $dizimistas['nome_dizimista'] ?></option>
+                                                    <?php endforeach ?>
+                                                </select>
+                                            </div>
+                                            <div class="col lista">
+                                                <input type="month" name="mes" required class="form-control" placeholder="mes">
+                                            </div>
+                                            <div class="col lista">
+                                                <input type="date" name="data" required class="form-control" placeholder="data">
+                                            </div>
+                                            
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Valor R$: </span>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                            </div>
+                                            <div class="col lista">
+                                                <select class="form-select lista" aria-label="Default select example" name="culto" required>
+                                                    <option value="culto">Culto</option>
+                                                    <option value="culto_de_jovens">Culto de Jovens</option>
+                                                    <option value="culto_de_doutrina">Culto de Doutrina</option>
+                                                    <option value="culto_de_missoes">Culto de missões</option>
+                                                    <option value="culto_de_criancas">Culto de crianças</option>
+                                                    <option value="culto_de_santa_ceia">Culto de Santa Ceia</option>
+                                                </select>
+                                            </div>
+                                            <!-- input valor
+                                                <div class="col lista">
+                                                <input id="valor" type="number" name="valor" required class="form-control" placeholder="valor">
+                                            </div>
+                                            -->
+                                            <button type="submit" id="teste" name="cadastrar" class="botao">Lançar</button>
                                         </div>
                                     </form>
                                 </div>
@@ -360,7 +368,7 @@
 
     <footer class="footer text-center">
         Develop Isael Silva
-        <a href="https://www.wrappixel.com">P-Contas</a>.
+        <a href="https://www.wrappixel.com">Assembleia de Deus</a>.
     </footer>
     </div>
     </div>
@@ -388,6 +396,11 @@
     <script src="../../assets/libs/flot/jquery.flot.crosshair.js"></script>
     <script src="../../assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
     <script src="../../dist/js/pages/chart/chart-page-init.js"></script>
+    <script>
+        document.getElementById("valor").addEventListener("change", function() {
+            this.value = parseFloat(this.value).toFixed(2);
+        });
+    </script>
 </body>
 
 </html>

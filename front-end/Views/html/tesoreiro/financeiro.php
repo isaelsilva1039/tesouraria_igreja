@@ -15,6 +15,7 @@
     <meta name="description" content="Matrix Admin Lite Free Version is powerful and clean admin dashboard template, inpired from Bootstrap Framework" />
     <meta name="robots" content="noindex,nofollow" />
     <title> Igreja AD-53 </title>
+    <link rel="stylesheet" href="../../cssTest/style.css">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png" />
     <!-- Custom CSS -->
@@ -279,7 +280,7 @@
                                     <?php endif  ?>
 
                                     <form action="validaFormularioCadastrosDizimistas.php" method="post" autocomplete="off">
-                                        <div class="form-row">
+                                        <div id="bt" class="form-row">
                                             <label>
                                                 <h4>Lançar dizimo</h4>
                                             </label>
@@ -306,7 +307,7 @@
                                             <div class="col lista">
                                                 <input id="valor" type="number" name="valor" required class="form-control" placeholder="valor">
                                             </div>
-                                            <button type="submit" name="cadastrar" class="btn btn-primary cor-btn">Cadastrar</button>
+                                            <button type="submit" name="cadastrar" class="botao" >Lançar</button>
                                         </div>
                                     </form>
                                 </div>
