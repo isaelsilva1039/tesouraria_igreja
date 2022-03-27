@@ -274,7 +274,7 @@
                                         </div>
                                     <?php endif  ?>
 
-                                    <form action="validaFormularioCadastrosDizimistas.php" method="post" autocomplete="off">
+                                    <form action="validarFormularioDespesas.php" method="post" autocomplete="off">
                                         <div id="bt" class="form-row">
                                             <label>
                                                 <h4>Lançar despesas</h4>
@@ -298,10 +298,10 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text">Valor R$: </span>
                                                 </div>
-                                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                <input type="text" name="valor" class="form-control" aria-label="Amount (to the nearest dollar)">
                                             </div>
                                             <div class="col lista">
-                                                <select class="form-select lista" aria-label="Default select example" name="gastos" required>
+                                                <select class="form-select lista" aria-label="Default select example" name="tipoDespesa" required>
                                                     <option value="igreja">Igreja em Geral</option>
                                                     <option value="ministerio_de_louvor">Ministério de louvor</option>
                                                     <option value="oracao">Círculo de oração</option>
