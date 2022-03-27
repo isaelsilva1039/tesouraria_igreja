@@ -307,13 +307,18 @@
                                                 <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
                                             </div>
                                             <div class="col lista">
+                                                <input type="text" name="observacoes" required class="form-control" placeholder="Observações">
+                                            </div>
+                                            <div class="col lista">
                                                 <select class="form-select lista" aria-label="Default select example" name="culto" required>
                                                     <option value="culto">Culto</option>
+                                                    <option value="culto_de_domingo">Culto de Domingo</option>
                                                     <option value="culto_de_jovens">Culto de Jovens</option>
                                                     <option value="culto_de_doutrina">Culto de Doutrina</option>
                                                     <option value="culto_de_missoes">Culto de missões</option>
                                                     <option value="culto_de_criancas">Culto de crianças</option>
                                                     <option value="culto_de_santa_ceia">Culto de Santa Ceia</option>
+                                                    <option value="oferta_especial">Oferta especial</option>
                                                 </select>
                                             </div>
                                             <!-- input valor
