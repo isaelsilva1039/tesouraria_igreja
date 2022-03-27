@@ -1,6 +1,6 @@
 <?php
     include 'Query.php';
-    $query = new Query()
+    $query = new Query();
 ?>
 
 <!DOCTYPE html>
@@ -274,7 +274,7 @@
                                         </div>
                                     <?php elseif ($_GET['naoCadastrado']) : ?>
                                         <div class="alert alert-warning alert-dismissible fade show cor2" role="alert">
-                                            <strong>Erro</strong> Tente novamente .
+                                            <strong>Erro</strong> Tente novamente.
                                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                         </div>
                                     <?php endif  ?>
