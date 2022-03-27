@@ -267,12 +267,12 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-body ">
-                                    <?php if ($_GET['sucesso']) : ?>
+                                    <?php if ( isset($_GET['sucesso']) ) : ?>
                                         <div class="alert alert-warning alert-dismissible fade show cor" role="alert">
                                             <strong>Sucesso</strong> As informaçoes do formulario foram salvas com sucesso.
                                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                         </div>
-                                    <?php elseif ($_GET['naoCadastrado']) : ?>
+                                    <?php elseif (isset($_GET['naoCadastrado']) ) : ?>
                                         <div class="alert alert-warning alert-dismissible fade show cor2" role="alert">
                                             <strong>Erro</strong> Tente novamente .
                                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
