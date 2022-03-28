@@ -286,7 +286,7 @@
 
       </div>
 
-      <div class="container-fluid">
+      <div class="bg-white container-fluid">
         <div class="row">
           <div class="col-md-12">
             <div class="row">
@@ -343,15 +343,20 @@
             </div>
           </div>
           <div class="container mt-5" >
-      <div class="row d-flex justify-content-center">
+      <div class=" bg-white row d-flex justify-content-center">
         <div class="col-12 text ">
             <canvas id="myChart" width="70" height="25"></canvas>
         </div>
       </div>
+      
     </div>
+    
+    <!--TESTE GRAFICO PIZZA-->
+      
+    <!--TESTE GRAFICO PIZZA-->
           <script>
-const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, {
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Red'],
