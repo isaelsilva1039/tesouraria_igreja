@@ -237,6 +237,10 @@
             <li class="sidebar-item">
               <a class="sidebar-link waves-effect waves-dark sidebar-link" href="relatorioofertas.php" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Relatório Ofertas</span></a>
             </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="relatoriodizimos.php" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Relatório de dízimos</span></a>
+            </li>
+            
             <!---->
           </ul>
         </nav>
