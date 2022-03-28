@@ -342,9 +342,9 @@
               </div>
             </div>
           </div>
-          <div class="container" >
+          <div class="container mt-5" >
       <div class="row d-flex justify-content-center">
-        <div class="col-8 text ">
+        <div class="col-12 text ">
             <canvas id="myChart" width="70" height="25"></canvas>
         </div>
       </div>
