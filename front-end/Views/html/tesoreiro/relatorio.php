@@ -269,7 +269,17 @@
           </div>
         </div>
       </div>
-      <table id="example" class="display" style="width:100%">
+      
+
+    </div>
+    
+    </div>
+  </div>
+  </div>
+  <div class="bg-white container-xxl mt-4 ">
+      <div class=" d-flex justify-content-end">
+      <div class="col-10 text">
+    <table id="example" class="display" style="width:100%">
         <thead>
             <tr>
                 <th>Name</th>
@@ -749,10 +759,9 @@
             </tr>
         </tfoot>
     </table>
-
     </div>
-  </div>
-  </div>
+    </div>
+    </div>
   <!-- Column -->
   </div>
 
