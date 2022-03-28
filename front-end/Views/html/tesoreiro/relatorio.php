@@ -233,7 +233,9 @@
             <li class="sidebar-item">
               <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashbord.php" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Principal</span></a>
             </li>
-            
+            <li class="sidebar-item">
+              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="relatorio.php" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Relatório</span></a>
+            </li>
             <li class="sidebar-item">
               <a class="sidebar-link waves-effect waves-dark sidebar-link" href="relatorioofertas.php" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Relatório Ofertas</span></a>
             </li>
