@@ -41,7 +41,8 @@
   <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full" data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
     <header class="topbar" data-navbarbg="skin5">
       <nav class="navbar top-navbar navbar-expand-md navbar-dark">
-        <div class="navbar-header"  style="background-color: #9900aa;">
+        <!-- style="background-color: #9900aa;"-->
+        <div class="navbar-header">
           <a class="navbar-brand" href="index.php">
             <b class="logo-icon ps-2">
               <img src="https://www.serfautec.com.br/images/igraja-serfautec.jpg" alt="homepage" class="light-logo" style="height: 40px; border-radius: 100px; width: 50px; margin-left: -10px;" />
@@ -53,7 +54,8 @@
           <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
         </div>
         <div class="navbar-collapse collapse" id="navbarSupportedContent" >
-          <ul class="navbar-nav float-start me-auto" style="background-color: #9900aa;">
+          <!-- style="background-color: #9900aa;"-->
+          <ul class="navbar-nav float-start me-auto">
             <li class="nav-item d-none d-lg-block">
               <a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a>
             </li>
@@ -237,6 +239,7 @@
     <!-- ============================================================== -->
     <!-- Left Sidebar - style you can find in sidebar.scss  -->
     <!-- ============================================================== -->
+    <!-- style="background-color: #9900aa;"-->
     <aside class="left-sidebar" data-sidebarbg="skin5">
       <!-- Sidebar scroll-->
       <div class="scroll-sidebar">
@@ -290,36 +293,36 @@
         <div class="row">
           <div class="col-md-12">
             <div class="row">
-              <div class="col-4">
-                <div class="bg-info p-10 text-white text-center">
+              <div class="col-4" >
+                <div class="p-10 text-white text-center" style="border-radius: 10px; background-color: #8e0485;">
                   <i class="mdi mdi-account fs-3 mb-1 font-16"></i>
                   <h5 class="mb-0 mt-1">2540</h5>
                   <small class="font-light">Total de dizimistas</small>
                 </div>
               </div>
               <div class="col-4">
-                <div class="bg-info p-10 text-white text-center">
+                <div class="p-10 text-white text-center" style="border-radius: 10px; background-color: #8e0485;">
                   <i class="mdi mdi-church fs-3 font-16"></i>
                   <h5 class="mb-0 mt-1">120</h5>
                   <small class="font-light">Total de congregações</small>
                 </div>
               </div>
               <div class="col-4">
-                <div class="bg-info p-10 text-white text-center">
+                <div class=" p-10 text-white text-center" style="border-radius: 10px; background-color: #8e0485;">
                   <i class="mdi mdi-account-multiple fs-3 mb-1 font-16"></i>
                   <h5 class="mb-0 mt-1">656</h5>
                   <small class="font-light">Total de membros</small>
                 </div>
               </div>
               <div class="col-4 mt-3">
-                <div class="bg-info p-10 text-white text-center">
+                <div class="p-10 text-white text-center" style="border-radius: 10px; background-color: #8e0485;">
                   <i class="mdi mdi-clipboard-text fs-3 mb-1 font-16"></i>
                   <h5 class="mb-0 mt-1">656</h5>
                   <small class="font-light">Despesas geral</small>
                 </div>
               </div>
               <div class="col-4 mt-3">
-                <div class="bg-danger p-10 text-white text-center">
+                <div class=" p-10 text-white text-center" style="border-radius: 10px; background-color: #8e0485;">
                   <i class="mdi mdi-clipboard-text fs-3 mb-1 font-16"></i>
                   <h5 class="mb-0 mt-1">656</h5>
                   <small class="font-light">Despesas do mês</small>
@@ -327,14 +330,14 @@
               </div>
               
               <div class="col-4 mt-3">
-                <div class="bg-success p-10 text-white text-center">
+                <div class=" p-10 text-white text-center" style="border-radius: 10px; background-color: #8e0485;">
                   <i class="mdi mdi-currency-usd fs-3 mb-1 font-16"></i>
                   <h5 class="mb-0 mt-1">9540</h5>
                   <small class="font-light">Saldo do mês</small>
                 </div>
               </div>
               <div class="col-12 mt-3">
-                <div class="bg-success p-10 text-white text-center">
+                <div class=" p-10 text-white text-center" style="border-radius: 10px; background-color: #8e0485;">
                   <i class="mdi mdi-currency-usd fs-3 mb-1 font-16"></i>
                   <h5 class="mb-0 mt-1">9540</h5>
                   <small class="font-bold">Saldo total</small>
